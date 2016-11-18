@@ -6,6 +6,7 @@
 function linkedListGenerator(){
 
   var head = null;
+  var tail = null
 
   function getHead(){
     return head;
@@ -31,13 +32,41 @@ function linkedListGenerator(){
   }
 
   function add (addValue) {
+
     var myTail = getTail();
+
     var newNode = {
       value: addValue,
       next: null
-    }
+    };
 
-    return newNode;
+
+
+    //if head is empty head is null
+    //if head isnt empty but is tail ===next
+    //if head isnt empty but is not == tail set next
+
+
+    if(myTail === null) {
+
+        head = newNode;
+
+    } else {
+      myTail.next = newNode;
+    }
+    // else if( head !== null && tail === null ) {
+
+    //   return newNode;
+
+    // }else if (head !== null && tail !== null ){
+
+    //   return newNode.next;
+
+    // }
+
+  return head;
+
+
 
   }
 
