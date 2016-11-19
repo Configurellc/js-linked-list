@@ -70,13 +70,30 @@ function linkedListGenerator(){
 
   }
 
+  function get (position) {
+  //grab position of Node by using a loop to find position
+  //define Nodes
+  //Find a way to count
+  var curNode = head;
+  var counter = 0;
+
+    while (counter <= curNode) {
+
+      if( curNode.next !== null) {
+        curNode = curNode.next;
+        return curNode;
+      }else{
+        return false;
+      }
+
+
+
+        }
+    }
   function remove() {
 
   }
 
-  function get () {
-
-  }
 
   function insert () {
 
